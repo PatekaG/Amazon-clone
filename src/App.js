@@ -1,20 +1,20 @@
-import './App.css';
-import { useContext, useEffect } from 'react';
-import { Redirect, Route, Switch} from 'react-router-dom';
-import Home from './components/Home';
-import Products from './components/Products';
-import Header from './components/Layout/Header';
-import ProductDetails from './components/ProductDetails';
-import Login from './components/Login';
-import Cart from './components/Cart';
-import Return from './components/Return';
-import Notfound from './components/Notfound';
-import ShoppingContext from './context/shopping/ShoppingContext';
-import {auth} from './Firebase'
+import "./App.css";
+import { useContext, useEffect } from "react";
+import { Navigate, Route, Routes } from "react-router-dom";
+import Home from "./components/Home";
+import Products from "./components/Products";
+import Header from "./components/Layout/Header";
+import ProductDetails from "./components/ProductDetails";
+import Login from "./components/Login";
+import Cart from "./components/Cart";
+import Return from "./components/Return";
+import Notfound from "./components/Notfound";
+import ShoppingContext from "./context/shopping/ShoppingContext";
+import { auth } from "./Firebase";
 
 const App = () => {
   const shoppingContext = useContext(ShoppingContext);
-  const {setUser} = shoppingContext;
+  const { setUser } = shoppingContext;
 
   useEffect(() => {
     auth.onAuthStateChanged((authUser) => {
@@ -30,45 +30,21 @@ const App = () => {
 
   return (
     <>
-    <Header/>
-    <main>
-      <Switch>
-        <Route path="/" exact>
-          <Redirect to="/home" />
-        </Route>
-
-        <Route path="/home">
-          <Home />
-        </Route>
-
-        <Route path="/products">
-          <Products />
-        </Route>
-
-        <Route path="/products/:id">
-          <ProductDetails />
-        </Route>
-
-        <Route path="/Login">
-          <Login/>
-        </Route>
-
-        <Route path="/Cart">
-          <Cart />
-        </Route>
-
-        <Route path="/Return">
-          <Return />
-        </Route>
-
-        <Route path="*">
-          <Notfound />
-        </Route>
-
-      </Switch>
-    </main>
-  </>
+      <Header />
+      <main>
+        <Routes>
+          <Route path="/" element={<Navigate to="/home" />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/products/:id" element={<ProductDetails />} />
+          <Route path="/Login" element={<Login />} />
+          <Route path="/Cart" element={<Cart />} />
+          <Route path="/Return" element={<Return />} />
+          <Route path="*" element={<Notfound />} />
+        </Routes>
+      </main>
+    </>
   );
-}
+};
 
 export default App;
