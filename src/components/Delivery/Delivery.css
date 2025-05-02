@@ -1,0 +1,79 @@
+.popup {
+    width: 380px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    margin: 50px auto;
+    position: relative;
+}
+
+.top_section {
+    display: flex;
+    align-items: center;
+    background-color: #f0f2f2;
+    border-bottom: 1px solid #cacaca;
+    padding-bottom: 25px;
+    padding: 30px;
+    border-radius: 10px 10px 0 0;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: 2px solid rgb(17, 17, 165);
+    border-radius: 6px;
+    font-size: 26px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.location{
+    color: #0004ff;
+}
+
+.popup > p {
+    font-size: 14px;
+    color: #555;
+    padding: 20px 10px 10px 30px;
+}
+
+.manage-link {
+    color: #0004ff;
+    text-decoration: none;
+    display: block;
+    margin: 10px 0;
+    padding-left: 30px;
+    padding-bottom: 15px;
+}
+
+.select_secion {
+    padding: 20px 30px 10px 30px;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    background-color: #f0f2f2;
+}
+
+.done_section {
+    padding-left:280px;
+    padding-bottom: 20px;
+}
+
+.done-btn {
+    background-color: #ffd814;
+    border: none;
+    border-radius: 999px;
+    padding: 10px 20px;
+    font-weight: bold;
+    margin-top: 15px;
+    cursor: pointer;
+}

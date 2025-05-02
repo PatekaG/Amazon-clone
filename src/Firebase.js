@@ -19,3 +19,24 @@ const db = firebaseApp.firestore();
 const auth = firebaseApp.auth();
 
 export{db, auth};
+
+// import { initializeApp } from "firebase/app";
+// import { getAuth } from "firebase/auth";
+// import { getFirestore } from "firebase/firestore";
+
+// const firebaseConfig = {
+//   apiKey: "AIzaSyBKD_v7eTAICc6JYeeZIgBktk1XzWYUgrA",
+//   authDomain: "clone-6d227.firebaseapp.com",
+//   projectId: "clone-6d227",
+//   storageBucket: "clone-6d227.appspot.com",
+//   messagingSenderId: "599877936124",
+//   appId: "1:599877936124:web:40b4e0de1058076b3ac879",
+//   measurementId: "G-4VW5H2VFH0"
+// };
+
+// const app = initializeApp(firebaseConfig);
+
+// const auth = getAuth(app);
+// const db = getFirestore(app);
+
+// export { auth, db };

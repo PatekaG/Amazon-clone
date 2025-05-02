@@ -1,0 +1,217 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    background-color: #131921;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Main top container */
+.header_container {
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    height: 60px;
+    /* gap: 10px; */
+}
+
+.logo_section {
+    padding: 4px;
+    display: flex;
+}
+
+.logo_section:hover {
+    border: 1px solid white;
+    border-radius: 2px;
+}
+
+.header_logo {
+    width: 100px;
+    object-fit: contain;
+    margin-top: 5px;
+}
+
+.logo_ext {
+    color: white;
+    font-weight: bold;
+    margin-left: -12px;
+}
+
+.header_location {
+    display: flex;
+    padding: 7px;
+    align-items: center;
+    color: white;
+}
+
+.header_location:hover {
+    border: 1px solid white;
+    border-radius: 2px;
+}
+
+.location_icon {
+    padding: 5px;
+    height: 22px !important;
+}
+
+.header_locate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.header_locate .deliver_optionOne {
+    color: rgb(182, 180, 180);
+}
+
+.header_search {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    height: 40px;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 0 15px;
+}
+
+.search_text {
+    padding: 10px;
+    background-color: #e6e6e6;
+    font-size: 14px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header_input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.search_icon {
+    padding: 8px;
+    height: 100%;
+    background-color: #cd9042;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Right-side nav */
+.header_nav {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    color: white;
+}
+
+.sign_section {
+    padding: 5px;
+}
+
+.sign_section:hover {
+    border: 1px solid white;
+    border-radius: 2px;
+}
+
+
+.header_option {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.order_section {
+    padding: 5px;
+}
+
+.order_section:hover {
+    border: 1px solid white;
+    border-radius: 2px;
+}
+
+.header_optionOne {
+    font-size: 12px;
+}
+
+.header_optionTwo {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.checkout_section {
+    padding: 7px;
+}
+
+.checkout_section:hover {
+    border: 1px solid white;
+    border-radius: 2px;
+}
+
+.header_optionBasket {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.header_basketCount {
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+/* Bottom nav bar */
+.navbar_bottom {
+    display: flex;
+    align-items: center;
+    background-color: #232f3e;
+    padding-left: 5px;
+    color: white;
+    font-size: 14px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.navbar_all {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.navbar_all:hover {
+    border: 1px solid white;
+}
+
+.navbar_links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+}
+
+.link {
+    padding: 10px;
+}
+
+.link:hover {
+    border: 1px solid white;
+}
+
+.navbar_links li {
+    cursor: pointer;
+}
+
+.navbar_logo:hover {
+    border: 1px solid white;
+}

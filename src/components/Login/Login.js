@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./Login.css";
 import { Link, useNavigate } from "react-router-dom";
-import { auth } from "../Firebase";
-import KeyboardArrowDownOutlinedIcon from "@mui/icons-material/KeyboardArrowDownOutlined";
+import { auth } from "../../Firebase";
+// import KeyboardArrowDownOutlinedIcon from "@mui/icons-material/KeyboardArrowDownOutlined";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -10,7 +10,7 @@ const Login = () => {
   const navigate = useNavigate();
 
   const signIn = (e) => {
-    e.preventDefault();
+    e.preventDefault()
     auth
       .signInWithEmailAndPassword(email, password)
       .then((auth) => {
@@ -65,7 +65,7 @@ const Login = () => {
           Notice.
         </p>
         <button className="login_registerButton" onClick={register}>
-          <KeyboardArrowDownOutlinedIcon />
+          {/* <KeyboardArrowDownOutlinedIcon /> */}
           <p>Create your Amazon account</p>
         </button>
       </div>
