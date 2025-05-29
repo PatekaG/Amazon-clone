@@ -14,7 +14,6 @@ const Orders = () => {
 
   useEffect(() => {
     if (!user) {
-      // Redirect if user not logged in
       navigate("/login"); 
       return;
     }
@@ -47,7 +46,7 @@ const Orders = () => {
               image={item.image}
               price={item.price}
               rating={item.rating}
-              hideButton={true} // optional: to hide "Remove" button
+              hideButton={true} 
             />
           ))}
           <p>Total: R{order.data.amount / 100}</p>

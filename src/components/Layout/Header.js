@@ -3,7 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import SearchIcon from "@mui/icons-material/Search";
 import ShoppingBasketOutlinedIcon from "@mui/icons-material/ShoppingBasketOutlined";
-import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
+// import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import MenuIcon from '@mui/icons-material/Menu';
 import "./Header.css";
 import ShoppingContext from "../../context/shopping/ShoppingContext";

@@ -16,7 +16,7 @@ const Subtotal = () => {
         value={getBasketTotal(basket)}
         decimalScale={2}
         displayType={'text'}
-        prefix={"$"}
+        prefix={"R"}
         renderText={(value) => (
           <>
             <p>
