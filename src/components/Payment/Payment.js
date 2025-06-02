@@ -30,6 +30,7 @@ const Payment = () => {
         method: "post",
         url: `/payments/create?total=${getBasketTotal(basket) * 100 }`,
       });
+      console.log("Response data:", response.data);
       setClientSecret(response.data.clientSecret);
     };
     getClientSecret();
@@ -68,7 +69,7 @@ const Payment = () => {
 
   const handleChange = (e) => {
     setDisabled(e.empty);
-    setError(e.error ? "e.error.message" : "");
+    setError(e.error ? e.error.message : "");
   };
 
   return (
